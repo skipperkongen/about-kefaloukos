@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Pimin Konstantin} % Your first name
+\familyname{Kefaloukos} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Anders Henriksens Gade 3, 2. t.h.}{2300 Copenhagen, Denmark}
+\mobile{(0045) 2611 6003}
+\email{kostas@diku.dk}
+\homepage{https://github.com/skipperkongen/about-kefaloukos}{github.com/skipperkongen/about-kefaloukos} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{People call me Kostas}
+\photo[70pt][0.4pt]{pictures/kostas} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\cvitem{}{Born: March 25, 1975 -- Copenhagen, Denmark}
+\cvitem{}{Nationality: Danish}
+
+%----------------------------------------------------------------------------------------
+%	CURRENT POSITION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Current position}
+\cventry{2011-present}{Ph.D. student}{University of Copenhagen}{Department of Computer Science}{}{}
+\cvitem{Supervisors}{Professor Martin Zachariasen, Assistant Professor Marcos Vaz Salles \& Ph.D. Anders Friis-Christensen}
+\cvitem{Collaboration}{Danish Geodata Agency, Grontmij}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2006--2008}{Masters of Science}{University of Copenhagen}{Department of Computer Science}{}{}  % Arguments not required can be left empty
+\cventry{2002--2006}{Bachelor of Science}{University of Copenhagen}{Department of Computer Science}{}{}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND TALKS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Special Interests}
+
+\cvitem{}{Spatial data \& algorithms, databases, distributed systems}
+
+\section{Publications, Talks, Mentoring}
+
+\subsection{Refereed Journal Publications}
+
+\cvitem{2010}{Hans Skov-Petersen, Martin Zachariasen, Pimin Konstantin Kefaloukos. Have a nice trip: an algorithm for identifying excess routes under satisfaction constraints. International Journal of Geographical Information Science, Volume 24, Issue 11 November 2010 , pages 1745 - 1758.}
+
+\subsection{Refereed Conference Publications}
+
+\cvitem{2012}{Pimin Konstantin Kefaloukos, Marcos Vaz Salles, Martin Zachariasen. TileHeat: A Framework for Tile Selection. In ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL GIS), Redondo Beach, USA, 2012.}
+\vspace{20px}
+\subsection{Invited talks}
+
+\cvitem{2013}{Vector tiles, Invited Talk at \emph{Danish Geodata Agency}, January 2013.}
+\cvitem{2012}{The future of GIS in the Cloud, Invited Talk at \emph{Digital Map Supply Seminar, Danish Geodata Agency}, October 2012.}
+
+\subsection{Mentoring}
+
+\cvitem{2013}{One MSc thesis, University of Copenhagen, 2013}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Conferences Attended}
+
+\cvitem{2012}{International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL GIS), Redondo Beach, CA, 2012.}
+\cvitem{2011}{37th International Conference on Very Large Data Bases (VLDB), Seattle, WA, 2011.}
+
+%----------------------------------------------------------------------------------------
+%	INDUSTRY EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Industry Experience}
+
+\cventry{2008--2011}{Consultant}{\textsc{Grontmij}}{Glostrup}{\emph{spatial data, public data integration, information retrieval, augmented reality}}{}
+\cventry{2006--2007}{Researcher and software developer}{\textsc{University of Copenhagen, Faculty of Life Sciences}}{Copenhagen}{\emph{agent based simulation, spatial data}}{}
+\cventry{2005--2006}{BSD administrator and software developer}{\textsc{Headnet}}{Copenhagen}{}{}
+\cventry{2004--2005}{BSD administrator and software developer}{\textsc{Learning Lab Denmark, the Danish University of Education}}{Copenhagen}{\emph{Python, backups, technical documention}}{}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Danish}{Mothertongue}{}
+\cvitemwithcomment{English}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Greek}{Basic}{Basic words and phrases only}
+
+%\vspace{20px}
+
+\section{References}
+
+\cvitem{}{Prof. Martin Zachariasen \newline Professor, Department of Computer Science, University of Copenhagen \newline martinz@diku.dk}
+\vspace{5px}
+
+\cvitem{}{Assist. Prof. Marcos V. Salles \newline Assistant Professor, Department of Computer Science, University of Copenhagen \newline vmarcos@diku.dk}
+\vspace{5px}
+
+\cvitem{}{Ph.D. Anders Friis-Christensen \newline Danish Geodata Agency, Ministry of the Environment, Denmark \newline andfr@gst.dk}
+
+\end{document}
