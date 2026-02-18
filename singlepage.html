@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About – Kostas Kefaloukos</title>
+  <style>
+    /* ---------- Page / Print ---------- */
+    @page { size: A4; margin: 12mm; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: #111;
+      font-size: 10.5pt;
+      line-height: 1.25;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ---------- Layout ---------- */
+    .page {
+      width: 100%;
+      height: calc(297mm - 24mm); /* approx A4 height minus margins; helps keep to one page */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .name {
+      font-size: 18pt;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      margin: 0 0 4px 0;
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: 10.5pt;
+      color: #333;
+    }
+
+    .meta {
+      display: grid;
+      gap: 6px;
+      align-content: start;
+      font-size: 9.8pt;
+    }
+
+    .meta-row {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 8px;
+    }
+
+    .label {
+      color: #666;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      font-size: 8.8pt;
+    }
+
+    /* ---------- Main Columns ---------- */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+      gap: 10px;
+      flex: 1; /* fill remaining space */
+      min-height: 0;
+    }
+
+    .card {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      padding: 10px 10px 9px 10px;
+      background: #fff;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .card h2 {
+      margin: 0 0 8px 0;
+      font-size: 10.2pt;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      color: #222;
+    }
+
+    .subhead {
+      margin: 8px 0 4px 0;
+      font-weight: 700;
+      font-size: 9.8pt;
+      color: #111;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 16px;
+    }
+
+    li {
+      margin: 0 0 4px 0;
+    }
+
+    .tight li { margin-bottom: 3px; }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 8px;
+      row-gap: 6px;
+      font-size: 9.8pt;
+    }
+
+    .kv .k { color: #666; font-weight: 600; }
+    .kv .v { color: #111; }
+
+    .pillrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .pill {
+      border: 1px solid #e1e1e1;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 9.2pt;
+      color: #111;
+      background: #fafafa;
+      white-space: nowrap;
+    }
+
+    .small { font-size: 9.3pt; color: #333; }
+    .muted { color: #666; }
+
+    /* ---------- Footer ---------- */
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      border-top: 1px solid #ddd;
+      padding-top: 8px;
+      font-size: 9.6pt;
+      color: #333;
+    }
+
+    /* ---------- If you need 2 columns instead, switch to this:
+       .grid { grid-template-columns: 1fr 1fr; }
+    ---------- */
+
+    /* ---------- Safety: keep single page in most cases ---------- */
+    .no-overflow {
+      overflow: hidden; /* if you overshoot, content may clip — better than spilling to page 2 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page no-overflow">
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <h1 class="name">Kostas Kefaloukos</h1>
+        <p class="tagline">
+          Senior tech-generalist — AI/automation, data systems, platform design. Builds production-grade solutions with business focus.
+        </p>
+        <div class="pillrow" aria-label="keywords">
+          <span class="pill">AI Agents</span>
+          <span class="pill">Automation</span>
+          <span class="pill">Data/ML</span>
+          <span class="pill">Full-stack</span>
+          <span class="pill">B2B</span>
+          <span class="pill">MVP 2–4 weeks</span>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div class="meta-row">
+          <div class="label">Location</div>
+          <div> Copenhagen, DK</div>
+        </div>
+        <div class="meta-row">
+          <div class="label">Email</div>
+          <div> [your@email]</div>
+        </div>
+        <div class="meta-row">
+          <div class="label">Phone</div>
+          <div> [+45 …]</div>
+        </div>
+        <div class="meta-row">
+          <div class="label">Links</div>
+          <div> LinkedIn: [link] · GitHub: [link]</div>
+        </div>
+        <div class="meta-row">
+          <div class="label">Rate</div>
+          <div> 1,400 DKK/hour (or scoped pilots)</div>
+        </div>
+        <div class="meta-row">
+          <div class="label">Availability</div>
+          <div> [e.g. 2–3 days/week · from dd/mm]</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main 3-column grid -->
+    <div class="grid">
+
+      <!-- Column 1 -->
+      <section class="card">
+        <h2>Snapshot</h2>
+        <div class="kv">
+          <div class="k">Profile</div><div class="v">Senior technical business builder</div>
+          <div class="k">Strength</div><div class="v">System design + hands-on delivery</div>
+          <div class="k">Domains</div><div class="v">AdTech · B2B SaaS · Logistics/Maritime · Martech</div>
+          <div class="k">Typical work</div><div class="v">Agents, automation, data products, platform foundations</div>
+        </div>
+
+        <div class="subhead">Recent Roles</div>
+        <ul class="tight">
+          <li><b>[Company]</b> — [Title] — [YYYY–YYYY]</li>
+          <li><b>[Company]</b> — [Title] — [YYYY–YYYY]</li>
+          <li><b>[Company]</b> — [Title] — [YYYY–YYYY]</li>
+        </ul>
+
+        <div class="subhead">Tech Spine</div>
+        <div class="pillrow">
+          <span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Django</span>
+          <span class="pill">PostgreSQL</span><span class="pill">Docker</span><span class="pill">n8n</span>
+          <span class="pill">Next.js</span><span class="pill">Cloud deploy</span>
+        </div>
+      </section>
+
+      <!-- Column 2 -->
+      <section class="card">
+        <h2>What I’ve Built</h2>
+
+        <div class="subhead">AdTech / Data Systems</div>
+        <ul>
+          <li><b>Identity resolution / dedup</b>: [1 line outcome + scale]</li>
+          <li><b>Knowledge graph</b>: [entities/relationships + purpose]</li>
+          <li><b>Serving layer</b>: [real-time decisioning/latency constraints]</li>
+          <li><b>Reach/validation</b>: [method + what it enabled]</li>
+        </ul>
+
+        <div class="subhead">AI & Automation</div>
+        <ul>
+          <li><b>LLM agents</b>: [workflow + systems integrated]</li>
+          <li><b>Automation</b>: [n8n / integrations / impact]</li>
+          <li><b>Operational AI</b>: [how deployed + monitoring/guardrails]</li>
+        </ul>
+
+        <div class="subhead">Full-stack / Platform</div>
+        <ul class="tight">
+          <li><b>APIs</b>: [FastAPI/Django + key integrations]</li>
+          <li><b>Templates / foundations</b>: [Next.js/CMS/eCommerce patterns]</li>
+          <li><b>Data pipelines</b>: [Databricks/PySpark if relevant]</li>
+        </ul>
+      </section>
+
+      <!-- Column 3 -->
+      <section class="card">
+        <h2>Where I Create Leverage</h2>
+
+        <div class="subhead">Typical Problems</div>
+        <ul>
+          <li>Repeated delivery overhead (boilerplate, setup, config)</li>
+          <li>Manual B2B processes ripe for automation</li>
+          <li>Fragmented customer data → operational systems</li>
+          <li>“AI ambition” without production path</li>
+        </ul>
+
+        <div class="subhead">How I Engage</div>
+        <ul class="tight">
+          <li><b>2–4 week pilot</b> → scoped outcome + demo + next steps</li>
+          <li><b>Embedded</b> with team, but design for handover</li>
+          <li><b>Reusable systems</b> over hero consulting</li>
+        </ul>
+
+        <div class="subhead">Example Pilot (Agency / NoA-style)</div>
+        <div class="small">
+          <b>Flow Project Acceleration Foundation</b><br/>
+          Week 1: map repeated setup & pain points · choose 1–2 templates<br/>
+          Week 2–3: implement reusable base (Next.js + CMS + deploy + CI)<br/>
+          Week 4: roll into 1 live “flow” project + measure time saved
+        </div>
+
+        <div class="subhead">Risk Mitigation</div>
+        <ul class="tight">
+          <li>Documented patterns + handover checklist</li>
+          <li>Pairing sessions with internal lead</li>
+          <li>No single-point-of-failure dependency</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div>
+        <b>Engagement Preferences</b><br/>
+        Pilots or defined scopes · Clear acceptance criteria · Short feedback loops
+      </div>
+      <div>
+        <b>Quick Notes</b><br/>
+        Comfortable in Dev + Martech contexts · Strong on integration-heavy systems
+      </div>
+    </div>
+  </div>
+</body>
+</html>
